@@ -1,0 +1,35 @@
+notes
+-possible invalid keys: expired, revoked, disabled
+
+#######################################################################
+# config
+#######################################################################
+#file=gnupg.conf | pgprules.xml
+## in gnupg.conf: groups=
+## in pgprules.xml: 
+#allowmd5=false | true
+
+#######################################################################
+# features per recipient (kid,uid) in list (email)
+#######################################################################
+check
+add
+remove
+change
+enable
+disable
+(temp. deactivate)
+(alias)
+
+#######################################################################
+# functions
+#######################################################################
+get fingerprint from email/uid
+get fingerprint from keyid
+format list of fingerprints for gnupg.conf (no 0x leading fp)
+format list of fp for pgprules (0x leading fp)
+read fp-list
+replace fp-list
+check for fp in fp-list
+check status of key via fp
+change status of key via fp
